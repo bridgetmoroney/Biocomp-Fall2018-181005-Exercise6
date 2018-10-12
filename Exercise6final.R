@@ -19,7 +19,7 @@ nrow(iris)
 ncol(iris)
 ### Brittni: We wanted you to print the last two rows and cols. This could work like:
 ## iris[149:150, 4:5]
-## I took off 0.5 points. 
+## I took off 0.25 points. 
 
 #to find the unique species names
 unique(iris$Species)
