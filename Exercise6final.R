@@ -17,6 +17,10 @@ iris=read.csv(file = "iris.csv", header = TRUE)
 nrow(iris)
 #to find there are 5 columns
 ncol(iris)
+### Brittni: We wanted you to print the last two rows and cols. This could work like:
+## iris[149:150, 4:5]
+## I took off 0.5 points. 
+
 #to find the unique species names
 unique(iris$Species)
 #to install plyr package for count function
@@ -25,12 +29,15 @@ install.packages('plyr')
 library(plyr)
 #using count function to see frequency of each Species type
 count(iris, 'Species')
+
 #to get subset of iris data with sepal width > 3.5
 subset(iris, Sepal.Width > 3.5) 
+
 #defining new file with only setosa 
 setosa=iris[c(1:50), ]
 #writing new file to setosa.csv in working directory
 write.csv(iris, 'setosa.csv')
+
 #defining new variable for Petal.Length observations of virginica
 virginica=(iris[c(101:150),3])
 #mean of virginica data is 5.552
